@@ -16,6 +16,7 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
+	vendor/htc/ville/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
 	vendor/htc/ville/proprietary/lib/libril.so:obj/lib/libril.so \
 	vendor/htc/ville/proprietary/lib/libv8.so:obj/lib/libv8.so
 
@@ -36,6 +37,8 @@ PRODUCT_COPY_FILES += \
   vendor/htc/ville/proprietary/bin/thermald:system/bin/thermald \
   vendor/htc/ville/proprietary/bin/time_daemon:system/bin/time_daemon \
   vendor/htc/ville/proprietary/bin/zchgd:system/bin/zchgd \
+  vendor/htc/ville/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
+  vendor/htc/ville/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
   vendor/htc/ville/proprietary/lib/libchromatix_s5k3h2yx_default_video.so:system/lib/libchromatix_s5k3h2yx_default_video.so \
   vendor/htc/ville/proprietary/lib/libchromatix_s5k3h2yx_hdr.so:system/lib/libchromatix_s5k3h2yx_hdr.so \
   vendor/htc/ville/proprietary/lib/libchromatix_s5k3h2yx_hfr.so:system/lib/libchromatix_s5k3h2yx_hfr.so \
@@ -45,6 +48,7 @@ PRODUCT_COPY_FILES += \
   vendor/htc/ville/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
   vendor/htc/ville/proprietary/lib/libcameraface.so:system/lib/libcameraface.so \
   vendor/htc/ville/proprietary/lib/libcamerapp.so:system/lib/libcamerapp.so \
+  vendor/htc/ville/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
   vendor/htc/ville/proprietary/lib/libDxOAF.so:system/lib/libDxOAF.so \
   vendor/htc/ville/proprietary/lib/libgemini.so:system/lib/libgemini.so \
   vendor/htc/ville/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
