@@ -32,11 +32,18 @@ PRODUCT_COPY_FILES += \
   vendor/htc/pyramid/proprietary/bin/netsharing:system/bin/netsharing \
   vendor/htc/pyramid/proprietary/bin/rmt_storage:system/bin/rmt_storage \
   vendor/htc/pyramid/proprietary/bin/qmuxd:system/bin/qmuxd \
+  vendor/htc/pyramid/proprietary/bin/snd:system/bin/snd \
+  vendor/htc/pyramid/proprietary/bin/snd8k:system/bin/snd8k \
+  vendor/htc/pyramid/proprietary/bin/sound8x60:system/bin/sound8x60 \
   vendor/htc/pyramid/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
   vendor/htc/pyramid/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
   vendor/htc/pyramid/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
+  vendor/htc/pyramid/proprietary/lib/libaudcalwb.so:system/lib/libaudcalwb.so \
   vendor/htc/pyramid/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
   vendor/htc/pyramid/proprietary/lib/libhtc_acoustic.so:system/lib/libhtc_acoustic.so \
+  vendor/htc/pyramid/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+  vendor/htc/pyramid/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+  vendor/htc/pyramid/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
   vendor/htc/pyramid/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so \
   vendor/htc/pyramid/proprietary/lib/libcameraface.so:system/lib/libcameraface.so \
   vendor/htc/pyramid/proprietary/lib/libcamerapp.so:system/lib/libcamerapp.so \
@@ -77,3 +84,7 @@ PRODUCT_COPY_FILES += \
   vendor/htc/pyramid/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
   vendor/htc/pyramid/proprietary/lib/libmpl_jni.so:system/lib/libmpl_jni.so \
   vendor/htc/pyramid/proprietary/lib/libmpl.so:system/lib/libmpl.so
+# using blobs for audio, overwriting unfilterable inherited msm8660common audio hal modules
+PRODUCT_COPY_FILES += \
+	vendor/htc/pyramid/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.msm8660.so \
+	vendor/htc/pyramid/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.msm8660.so
